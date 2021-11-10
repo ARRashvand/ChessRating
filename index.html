@@ -35,7 +35,7 @@
 
         var row = '<tr><th scope="row">' + rowNumber + '</th>';
 
-        row += '<td><h5><a href=' + data.url + '>' + data.username + '</a></h5></td>';
+        row += '<td class="g-col-6 g-col-md-4"><h5><a href=' + data.url + '>' + data.username + '</a></h5></td>';
 
         // ======================= classical
         row += AddTd(data.perfs.classical)
@@ -49,7 +49,7 @@
       }
 
       function AddTd(data) {
-        var row = '<td><span class="rpNumber">' + data.rating + '</span>';
+        var row = '<td class="g-col-6 g-col-md-4"><span class="rpNumber">' + data.rating + '</span>';
         var downOrUp = "";
         var badOrGood = "";
         if (data.prog != 0) {
